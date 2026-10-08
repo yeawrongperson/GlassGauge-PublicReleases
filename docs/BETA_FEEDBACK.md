@@ -2,7 +2,7 @@
 
 [Home](../README.md) / Beta Feedback
 
-A useful report helps distinguish an app bug from a device-specific hardware limitation. Beta builds are **not available yet**, but the reporting format below will be used once testing begins.
+A useful report helps distinguish an app bug from a specific to the device hardware limitation. Beta builds are **not available yet**, but the reporting format below will be used once testing begins.
 
 ## Before opening an issue
 
@@ -19,7 +19,7 @@ Copy this into a [new GitHub Issue](https://github.com/yeawrongperson/GlassGauge
 A short explanation of the problem.
 
 ### GlassGauge version
-Example: v0.x.x-beta.x (include build number)
+Example: version 0.x.x Beta x (include build number)
 
 ### Mac and macOS
 Model/year, Intel or Apple Silicon chip, and macOS version.
@@ -51,12 +51,12 @@ Anything that changes the result, such as plugging in power or resizing the wind
 
 ## Especially valuable tests
 
-- Sensor availability on different Mac models.
-- Battery charging, power-source transitions, and reading freshness.
-- CPU/GPU values compared at matching sampling times with other tools.
-- Performance overhead and idle resource usage.
-- Window blur, appearance, resizing, multiple monitors, and accessibility.
-- Install/open/relaunch reliability and permission prompts.
+* Sensor availability on different Mac models.
+* Battery charging, power source transitions, and reading freshness.
+* CPU and GPU values compared at matching sampling times with other tools.
+* Performance overhead and idle resource usage.
+* Window blur, appearance, resizing, multiple monitors, and accessibility.
+* Install/open/relaunch reliability and permission prompts.
 
 ## Protect your information
 

@@ -1,77 +1,53 @@
-# GlassGauge — Changelog
+# GlassGauge Changelog
 
-This file covers **publicly relevant development milestones**. A development milestone is not a publicly shipped version. Actual downloadable releases will be identified by their version numbers and links once packages are available.
+This page tracks development updates and, once there are downloads, public releases. Work completed inside the development project is not necessarily part of a public beta. Each downloadable release will have its own version number and notes.
 
-## Unreleased — Preparing the first public beta
+## Unreleased: Preparing the first public beta
 
-**Status as of October 8, 2026:** no distributable build has been published in this repository.
+**Updated October 8, 2026.** No downloadable beta has been published yet.
 
-### In progress
+### Current priorities
 
-- Preparing an external beta packaging and installation workflow.
-- Validating macOS compatibility, code signing, notarization, and hardware requirements before publishing an installer.
-- Organizing public documentation, known issues, feedback, and release notes.
-- Identifying unsupported or hardware-specific data sources so beta testers have accurate expectations.
+* Prepare and test a macOS app package that other people can install.
+* Check supported hardware and macOS versions before publishing compatibility claims.
+* Verify signing, notarization, permissions, and the installation process.
+* Prepare screenshots, release notes, known issues, and a way for beta testers to report problems.
 
-### Known constraints
+### Things to know before testing
 
-- The current Intel hardware-sensor path has been tested on an Intel MacBook Pro, but cannot be treated as a compatibility guarantee for every Intel Mac.
-- The verified development snapshot does **not** include a dedicated Apple Silicon hardware-sensor backend.
-- Some metrics may be unavailable on specific hardware; unavailable is not a zero reading.
-- Selected SMC power readings cannot yet be labeled as verified total Mac or wall-outlet power.
-- A signed and notarized public beta artifact has not been verified or published.
+* Intel hardware sensor testing has been performed on an Intel MacBook Pro, but other Intel models still need testing.
+* The reviewed development version does not have a dedicated Apple Silicon hardware sensor provider.
+* Some sensors may not exist or may be unavailable on a particular Mac.
+* Selected SMC power readings do not yet have a verified whole system measurement boundary.
+* A signed public installer has not been published.
 
-## October 2026 — Development refresh (not a public release)
+## October 2026: Monitoring and interface refresh
 
-### Monitoring and sensor accuracy
+### Sensor readings
 
-- Introduced clearer handling of measured, unavailable, stale, and failed sensor readings.
-- Refined Intel AppleSMC hardware-sensor reads and tested real fan, temperature, and selected power-related data on an Intel MacBook Pro (MacBookPro16,1).
-- Revised reporting so a missing sensor is not represented as a fabricated number.
-- Revisited CPU-utilization presentation and the difference between overall CPU use and per-process percentages.
-- Audited battery current and voltage interpretation, along with charging and external-power state changes.
-- Avoided treating an unverified SMC power key as a confirmed total system-power meter.
+* Updated the monitoring design to distinguish measured readings from unavailable, outdated, or failed data.
+* Worked on direct AppleSMC readings for supported Intel Macs, including available fan speeds, temperatures, and selected power information.
+* Tested those readings on an Intel MacBook Pro identified as `MacBookPro16,1`.
+* Reviewed the way CPU percentages are presented so whole machine CPU activity is not confused with process percentages.
+* Investigated battery current, voltage, charging state, and changes between battery and external power.
+* Updated the handling of uncertain power readings so they are not described as confirmed total Mac power consumption.
 
-### Interface and experience
+### Design and usability
 
-- Reworked the native AppKit glass backdrop used under SwiftUI views.
-- Added or refined a background transparency adjustment.
-- Continued tuning the dashboard, metric panels, and native window behavior.
+* Reworked the AppKit backdrop underneath the SwiftUI interface.
+* Refined the glass appearance and its transparency setting.
+* Continued improving the dashboard and individual metric views.
 
-### Existing functionality retained
+### Features carried forward from earlier development
 
-The live overview, chart-based historical samples, detail views, and network traffic presentation were already part of the project's earlier monitoring foundation. They should not all be described as newly invented in October 2026.
+The original project already had a live performance dashboard, graph history during a session, detail views, and network traffic charts. Those are part of the foundation, rather than entirely new additions in October 2026.
 
-## 2025 — Original development and community preview
+## 2025: The original GlassGauge preview
 
-- GlassGauge began as a modern, glass-inspired macOS system-monitoring project.
-- Early development established a live overview for major performance metrics, graph views, and a native desktop presentation.
-- A preview shared with the r/macapps community reached approximately 146,000 views and 137 shares, according to the original post's reported statistics.
-- The project was still under development; the initial public preview was **not** a downloadable general-release milestone.
+GlassGauge began as a macOS system monitor with a modern glass inspired interface. Early development included the main performance overview, graph views, and a desktop layout built around native macOS technology.
 
-## Future version entries
+I shared an early preview in **r/macapps**, where it reached approximately **146,000 views and 137 shares**. People continued checking on the project afterward. That preview was not a public installer release.
 
-When a packaged beta actually ships, add an entry using this structure:
+## How future releases will be documented
 
-```markdown
-## [v0.x.x-beta.1] — YYYY-MM-DD
-
-### Added
-- ...
-
-### Changed
-- ...
-
-### Fixed
-- ...
-
-### Known issues
-- ...
-
-### Tested on
-- Model, processor, macOS version, build identifier
-
-[Download this release](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/ACTUAL-TAG)
-```
-
-Do not turn this template into a live release link until the tag exists.
+Once the first build is published, each release entry will include its exact version, date, supported Mac models, changes, known issues, and a link to the downloadable package. See the [release notes template](docs/FIRST_BETA_RELEASE_NOTES_TEMPLATE.md) for the format being prepared.

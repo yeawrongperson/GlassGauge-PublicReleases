@@ -15,7 +15,7 @@ These steps describe the intended user flow, **not a current download instructio
 1. Open the official GitHub Releases page.
 2. Select a beta whose release notes identify your Mac and macOS version as supported.
 3. Download the attached `.dmg` or `.zip` from that release.
-4. Follow the release-specific installation steps (typically placing the application in Applications).
+4. Follow the specific to that release installation steps (typically placing the application in Applications).
 5. Open GlassGauge and review any macOS permissions request before approving it.
 6. Verify the application version against the release notes.
 
@@ -23,10 +23,10 @@ The release workflow will be evaluated for appropriate Developer ID signing and 
 
 ## What to expect in an early beta
 
-- Some metrics may appear as unavailable on your machine.
-- Sensor labels may be refined as readings are validated.
-- Layout and performance may change between beta builds.
-- Testing may begin with a narrower supported-device list than the eventual goal.
-- Early builds may have bugs and should not be relied upon for safety-critical hardware decisions.
+* Some metrics may appear as unavailable on your machine.
+* Sensor labels may be refined as readings are validated.
+* Layout and performance may change between beta builds.
+* Testing may begin with a narrower supported device list than the eventual goal.
+* Early builds may have bugs and should not be relied upon for important hardware decisions.
 
 For the scope and limitations of individual readings, see [Features](FEATURES.md) and [Compatibility](COMPATIBILITY.md).
