@@ -15,7 +15,7 @@
 | Apple Silicon Macs | Not a supported target for this Intel x86_64 build; dedicated Apple Silicon hardware sensor provider not implemented |
 | Macs without an internal battery | Laptop battery measurements do not apply |
 | Fanless models | No physical fan RPM to report |
-| Minimum macOS version | Not established as a published requirement; further testing needed |
+| macOS | **13.5 or later**, as specified in the 0.1.1 release notes; wider device validation needed |
 | Installer | [0.1.1 Alpha Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/download/v0.1.1-alpha/GlassGauge-0.1.1-alpha-intel.zip) |
 | Code signing and notarization | **Unsigned and not notarized** |
 | Administrator access | Not needed for normal monitoring |
