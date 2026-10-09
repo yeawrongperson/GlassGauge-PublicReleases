@@ -1,10 +1,10 @@
-# First public beta: release notes template
+# Future beta release notes template
 
-**DRAFT ONLY: DO NOT PUBLISH AS A RELEASE UNTIL A REAL BUILD EXISTS**
+**DRAFT ONLY.** GlassGauge 0.1.0 Alpha has already been released. This template is kept for a possible future beta and is not the release notes for the current alpha.
 
 ## GlassGauge version [VERSION] Beta [BUILD]
 
-GlassGauge's first public beta is ready for testing on the hardware listed below. This build is an early look at the native macOS dashboard, live metric graphs, and hardware monitoring where supported.
+A future GlassGauge beta would be ready for testing on the hardware listed below. This build is an early look at the native macOS dashboard, live metric graphs, and hardware monitoring where supported.
 
 ### Download
 
@@ -38,4 +38,4 @@ Open an [Issue](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issu
 
 ### Thanks
 
-Thank you to everyone who followed GlassGauge since the 2025 Reddit preview. This beta is a beginning, not a final product; your real world testing will help decide where development goes next.
+Thank you to everyone who followed GlassGauge since the 2025 Reddit preview. Your real world testing will help decide where development goes next.
