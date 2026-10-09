@@ -26,7 +26,7 @@ The exact wording of macOS security prompts can vary by OS version. **Do not dis
 
 ## Compatibility
 
-The alpha is built for **Intel Macs (x86_64)**. Hardware sensor testing has focused on the **16 inch 2019 Intel MacBook Pro (MacBookPro16,1)**. Other Intel Macs may work, but individual readings can differ. Dedicated Apple Silicon hardware sensor support is not implemented. A minimum supported macOS version has not yet been established for general release claims.
+The alpha is built for **Intel Macs (x86_64)**. Hardware sensor testing has focused on the **16 inch 2019 Intel MacBook Pro (MacBookPro16,1)**. Other Intel Macs may work, but individual readings can differ. Dedicated Apple Silicon hardware sensor support is not implemented. The 0.1.1 release specifies **macOS 13.5 or later**. Compatibility testing beyond the primary validated Intel Mac remains limited.
 
 Read [Compatibility](COMPATIBILITY.md) and [Known Issues](KNOWN_ISSUES.md) before reporting a missing sensor.
 
