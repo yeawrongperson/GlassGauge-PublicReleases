@@ -1,6 +1,6 @@
 # Future beta release notes template
 
-**DRAFT ONLY.** GlassGauge 0.1.0 and 0.1.1 Alpha have both been released. This template is retained for a possible future beta and is not the current release notes.
+**DRAFT ONLY.** GlassGauge 0.1.0, 0.1.1, and 0.1.2 Alpha have been released. This template is retained for a possible future beta and is not the current release notes.
 
 ## GlassGauge version [VERSION] Beta [BUILD]
 
