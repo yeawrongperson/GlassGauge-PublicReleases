@@ -2,7 +2,7 @@
 
 [Home](../README.md) / Compatibility
 
-**GlassGauge 0.1.0 Alpha is publicly available for Intel Macs.** This is the first public alpha, and broad device compatibility has not yet been established.
+**GlassGauge 0.1.1 Alpha is publicly available for Intel Macs.** This is the second public alpha, and broad device compatibility has not yet been established.
 
 ## Current support
 
@@ -16,7 +16,7 @@
 | Macs without an internal battery | Laptop battery measurements do not apply |
 | Fanless models | No physical fan RPM to report |
 | Minimum macOS version | Not established as a published requirement; further testing needed |
-| Installer | [0.1.0 Alpha Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/download/v0.1.0-alpha/GlassGauge-0.1.0-alpha-intel.zip) |
+| Installer | [0.1.1 Alpha Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/download/v0.1.1-alpha/GlassGauge-0.1.1-alpha-intel.zip) |
 | Code signing and notarization | **Unsigned and not notarized** |
 | Administrator access | Not needed for normal monitoring |
 | Development source | Private |
@@ -35,7 +35,7 @@ Read [Getting Started](GETTING_STARTED.md) for ZIP extraction and first launch g
 
 ## Reporting a compatibility issue
 
-When reporting a problem with **0.1.0 Alpha**, include:
+When reporting a problem with **0.1.1 Alpha**, include:
 
 1. Your Mac model and year.
 2. Processor type and GPU details, if known.
@@ -46,4 +46,4 @@ When reporting a problem with **0.1.0 Alpha**, include:
 
 Never post device serial numbers or unredacted diagnostic logs. See [Feedback](BETA_FEEDBACK.md) and [Known Issues](KNOWN_ISSUES.md).
 
-[Download 0.1.0 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha)
+[Download 0.1.1 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha)
