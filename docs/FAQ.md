@@ -4,19 +4,19 @@
 
 ### Is GlassGauge available to download?
 
-**Not yet.** The project is in before the beta development. Official public builds will appear on [GitHub Releases](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases) when ready.
+**Yes.** [GlassGauge 0.1.0 Alpha for Intel Macs](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha) is available now. This is an unsigned, not notarized ZIP release. See [Getting Started](GETTING_STARTED.md).
 
 ### Was GlassGauge abandoned after the 2025 Reddit post?
 
-No. Work continued, including a substantial monitoring and interface refresh in 2026. The project still needs release packaging, compatibility testing, and beta validation before a public installer can be offered.
+No. Work continued, including a substantial monitoring and interface refresh in 2026. The first Intel alpha has now shipped. Wider compatibility testing and further improvements are ongoing.
 
 ### Is the app free? Is it open source?
 
-Pricing and licensing for the eventual release have **not been announced**. This public repository hosts release information and future downloads; the development source is not being offered here. A public releases repository is not automatically an open source license.
+Future pricing and licensing plans have **not been announced**. The current 0.1.0 Alpha ZIP is publicly downloadable. This public repository hosts release information and future downloads; the development source is not being offered here. A public releases repository is not automatically an open source license.
 
 ### Will it work on my Apple Silicon Mac?
 
-Apple Silicon is part of the wider compatibility goal, but the sensor coordinator reviewed in October 2026 has **no dedicated Apple Silicon hardware sensor provider**. Do not assume complete Apple Silicon temperature, fan, and power coverage in the first beta. The official compatibility list will be published with the build.
+Apple Silicon is part of the wider compatibility goal, but the sensor coordinator reviewed in October 2026 has **no dedicated Apple Silicon hardware sensor provider**. The current 0.1.0 Alpha targets Intel x86_64 only. Do not expect this build to support Apple Silicon hardware monitoring.
 
 ### Will it work on an Intel Mac?
 
@@ -36,16 +36,16 @@ Individual process CPU percentages can exceed 100% when a process uses multiple 
 
 ### Does it require an administrator password?
 
-The current Intel sensor reading path was designed to collect normal measurements without an automatic administrator prompt. Legacy helper diagnostics exist in the development project and may request authorization if invoked explicitly. The final packaged beta permission flow will be documented and verified before release.
+The current Intel sensor reading path was designed to collect normal measurements without an automatic administrator prompt. Legacy helper diagnostics exist in the development project and may request authorization if invoked explicitly. Normal monitoring in 0.1.0 Alpha does not require administrator access.
 
 ### Does it send my data to a server?
 
-A final, audited privacy statement for the public beta has not yet been published. The monitoring design uses macOS hardware and OS sources, but we will not make an unverified blanket claim about analytics, crash reports, storage, or network transmission. See [Privacy & Security](PRIVACY_AND_SECURITY.md).
+A complete independent privacy audit has not been established for 0.1.0 Alpha. The monitoring design uses macOS hardware and OS sources, but we will not make an unverified blanket claim about analytics, crash reports, storage, or network transmission. See [Privacy & Security](PRIVACY_AND_SECURITY.md).
 
 ### Can I help test it?
 
-When a build becomes available, testing and feedback: especially across different Mac models: will be welcome. Read [Beta Feedback](BETA_FEEDBACK.md) for a reporting format.
+The first alpha is available, and testing and feedback across Intel Mac models are welcome. Read [Beta Feedback](BETA_FEEDBACK.md) for a reporting format.
 
-### When will the beta release?
+### When will the next version release?
 
-There is **no announced release date**. The [Roadmap](ROADMAP.md) lists work that should happen before public distribution.
+**0.1.0 Alpha is already available.** No date has been announced for the next build. See the [Roadmap](ROADMAP.md) for current priorities.
