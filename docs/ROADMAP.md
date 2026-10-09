@@ -4,7 +4,7 @@
 
 GlassGauge is an independent macOS system monitor. This page explains what is already working in development, what is planned after the first public alpha, and what I would like to build next.
 
-**GlassGauge 0.1.1 Alpha is available now for Intel Macs.** [Download the first public release](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha) and follow this roadmap for upcoming work.
+**GlassGauge 0.1.1 Alpha is available now for Intel Macs.** [Download the latest public alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha) and follow this roadmap for upcoming work.
 
 [Back to GlassGauge](../README.md) | [Known limitations](KNOWN_ISSUES.md) | [Report an issue](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues)
 
@@ -46,10 +46,10 @@ The monitoring system now distinguishes a real measurement from information that
 
 ## 2. Following up on the first public alpha
 
-**0.1.1 Alpha has already shipped.** The work below describes next steps, not conditions that still prevent the download.
+**0.1.1 Alpha has shipped as the second public alpha.** The work below describes next steps, not conditions that prevent the download.
 
 1. **Improve distribution.** The Intel ZIP is already available, but future builds can improve signing, notarization, and first launch.
-2. **Expand compatibility testing.** Gather reports from additional Intel Macs and establish a verified minimum macOS version.
+2. **Expand compatibility testing.** Gather reports from additional Intel Macs and validate the stated macOS 13.5 or later requirement.
 3. **Test the everyday experience.** Check startup, live updates, charts, window resizing, menu bar behavior, and resource usage.
 4. **Double check sensor accuracy.** Make sure unsupported or outdated readings are explained rather than displayed as believable numbers. Continue testing battery charging and power interpretation.
 5. **Review permissions and privacy.** Confirm that normal monitoring does not unexpectedly request administrator access and that any diagnostic behavior is clearly explained.
@@ -87,7 +87,7 @@ These are ideas, not confirmed features or commitments.
 
 * Configurable alerts for supported metrics.
 * More ways to organize or personalize the dashboard.
-* Optional exports and longer term performance reports.
+* Optional export of historical metrics and longer term performance reports. Local diagnostic report export is already available in 0.1.1.
 * Additional tools that help explain unusual system behavior.
 
 If something matters to you, please suggest it through [GitHub Issues](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues). Feedback can help decide what comes next.
