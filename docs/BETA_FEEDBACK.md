@@ -1,8 +1,8 @@
-# Beta feedback guide
+# Alpha feedback guide
 
-[Home](../README.md) / Beta Feedback
+[Home](../README.md) / Alpha Feedback
 
-A useful report helps distinguish an app bug from a specific to the device hardware limitation. Beta builds are **not available yet**, but the reporting format below will be used once testing begins.
+A useful report helps distinguish an app bug from a model specific hardware limitation. **GlassGauge 0.1.0 Alpha is available now** for Intel Macs: [download it here](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha).
 
 ## Before opening an issue
 
@@ -19,7 +19,7 @@ Copy this into a [new GitHub Issue](https://github.com/yeawrongperson/GlassGauge
 A short explanation of the problem.
 
 ### GlassGauge version
-Example: version 0.x.x Beta x (include build number)
+Example: 0.1.0 Alpha (include build number if available)
 
 ### Mac and macOS
 Model/year, Intel or Apple Silicon chip, and macOS version.
