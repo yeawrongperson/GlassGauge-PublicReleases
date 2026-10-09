@@ -42,7 +42,7 @@ Development testing on an Intel MacBook Pro has verified access to supported fan
 
 The monitoring system now distinguishes a real measurement from information that is unavailable, outdated, or failed to load. A missing reading should not pretend to be zero, and GlassGauge should never invent fan speeds or temperatures to fill a blank space.
 
-**Public release note:** These foundation features are present in 0.1.1 Alpha where supported, but individual hardware sensors vary by Mac.
+**Public release note:** These foundation features remain present in 0.1.2 Alpha where supported, but individual hardware sensors vary by Mac.
 
 ## 2. Following up on the first public alpha
 
