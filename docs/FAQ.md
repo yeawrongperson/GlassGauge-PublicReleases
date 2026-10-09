@@ -56,7 +56,7 @@ A complete independent privacy audit has not been established for 0.1.1 Alpha. T
 
 ### Can I help test it?
 
-The first alpha is available, and testing and feedback across Intel Mac models are welcome. Read [Beta Feedback](BETA_FEEDBACK.md) for a reporting format.
+0.1.1 Alpha is available, and testing and feedback across Intel Mac models are welcome. Read [Alpha Feedback](BETA_FEEDBACK.md) for a reporting format.
 
 ### When will the next version release?
 
