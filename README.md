@@ -11,6 +11,7 @@
     <a href="docs/FEATURES.md">Features</a> ·
     <a href="docs/COMPATIBILITY.md">Compatibility</a> ·
     <a href="docs/ROADMAP.md">Roadmap</a> ·
+    <a href="docs/KNOWN_ISSUES.md">Known limitations</a> ·
     <a href="CHANGELOG.md">Development updates</a> ·
     <a href="docs/FAQ.md">FAQ</a>
   </p>
@@ -109,6 +110,7 @@ Please avoid sharing serial numbers, credentials, private file paths, or unedite
 | [Getting started](docs/GETTING_STARTED.md) | Where the beta will be available and how installation will work |
 | [FAQ](docs/FAQ.md) | Common questions |
 | [Roadmap](docs/ROADMAP.md) | Development priorities |
+| [Known issues and limitations](docs/KNOWN_ISSUES.md) | Expected behavior, incomplete features, and useful beta bug reports |
 | [Project history](docs/PROJECT_HISTORY.md) | How the app has changed since 2025 |
 | [Privacy and security](docs/PRIVACY_AND_SECURITY.md) | What has been reviewed and what still needs verification |
 | [Beta feedback](docs/BETA_FEEDBACK.md) | How to submit useful reports |
