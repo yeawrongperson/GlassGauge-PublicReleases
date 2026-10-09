@@ -4,7 +4,7 @@
 
 GlassGauge is designed to show useful Mac performance information, explain the limitations of hardware telemetry, and stay legible while the machine is busy.
 
-> **0.1.0 Alpha:** The Intel build is [publicly downloadable](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha). Individual readings still depend on the Mac model, and the main validated hardware is MacBookPro16,1.
+> **0.1.1 Alpha:** The Intel build is [publicly downloadable](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha). Individual readings still depend on the Mac model, and the main validated hardware is MacBookPro16,1.
 
 ## Live overview
 
@@ -28,6 +28,18 @@ The current development source provides an overview with dashboard tiles for:
 * Detail views expand on individual metrics, with a dedicated split network incoming and outgoing visualization.
 * SQLite stores normal telemetry approximately once per second, with **Now, 1h, and 24h** views and up to approximately **48 hours** retention. History persists across restarts. Intervals without collection appear as gaps rather than fabricated data.
 * A persisted Logs feed tracks meaningful events such as launch, sleep and wake, power source changes, GPU availability, and sensor availability.
+
+## Diagnostics, history controls, and support
+
+Version 0.1.1 adds **Export Diagnostic Report**, **Copy Diagnostic Summary**, and a **Report an Issue** workflow. Diagnostic reports are created locally with selected hardware and sensor support data. They are not uploaded automatically; you choose if and when to save or share them. Personal files, credentials, and network identifiers are intentionally excluded. Review files before sharing.
+
+You can clear graph history and Event Logs separately. An Overview Clear History shortcut is also available.
+
+## Background and battery energy options
+
+Choose **Glass** or **Solid** background styles. When configured, charts may keep updating while GlassGauge is not the active application.
+
+**Reduce Energy Use on Battery** is opt in. When external power is disconnected, it can temporarily use Solid and pause rendering inactive charts. Sensor sampling and persistent history recording continue. When external power reconnects, your presentation choices are restored. The app uses external connection state rather than charging state to determine battery operation.
 
 ## Menu bar and appearance
 
@@ -58,7 +70,7 @@ Overall CPU usage and individual process CPU usage use different scales on macOS
 
 Battery current multiplied by battery voltage can estimate **power entering or leaving the battery**. That value is not interchangeable with total platform consumption or electricity drawn from an outlet. The current SMC PSTR value's electrical boundary remains unverified on the tested Intel model and is labeled conservatively in development.
 
-## Features not included or not guaranteed in 0.1.0 Alpha
+## Features not included or not guaranteed in 0.1.1 Alpha
 
 The following should be regarded as planned or requiring further verification, **not shipped guarantees**:
 

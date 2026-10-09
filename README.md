@@ -3,7 +3,7 @@
   <h3>A clearer window into your Mac.</h3>
   <p>See what your Mac is doing in real time. GlassGauge brings performance metrics, hardware readings, and live charts into a native macOS app with a clean glass inspired interface.</p>
   <p>
-    <a href="https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha"><img alt="0.1.0 Alpha available" src="https://img.shields.io/badge/0.1.0%20Alpha-Available-6d5dfc?style=for-the-badge"></a>
+    <a href="https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha"><img alt="0.1.1 Alpha available" src="https://img.shields.io/badge/0.1.1%20Alpha-Available-6d5dfc?style=for-the-badge"></a>
     <a href="docs/COMPATIBILITY.md"><img alt="Platform: macOS" src="https://img.shields.io/badge/Platform-macOS-24292f?style=for-the-badge"></a>
     <a href="docs/FEATURES.md"><img alt="Made with Swift and SwiftUI" src="https://img.shields.io/badge/Made%20with-Swift%20%26%20SwiftUI-f05138?style=for-the-badge"></a>
   </p>
@@ -18,7 +18,7 @@
 </div>
 
 > [!IMPORTANT]
-> **GlassGauge 0.1.0 Alpha is available now for Intel Macs.** [Download the official Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/download/v0.1.0-alpha/GlassGauge-0.1.0-alpha-intel.zip) from the [0.1.0 Alpha release page](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha). The app is **unsigned and not notarized**, so macOS may require you to confirm the first launch. See [Getting Started](docs/GETTING_STARTED.md) for safe instructions. Dedicated Apple Silicon hardware sensor support is not implemented yet.
+> **GlassGauge 0.1.1 Alpha, build 2, is available for Intel Macs.** [Download the Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/download/v0.1.1-alpha/GlassGauge-0.1.1-alpha-intel.zip) from the [0.1.1 Alpha release page](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha). The app is **unsigned and not notarized**, so macOS may require you to confirm the first launch. See [Getting Started](docs/GETTING_STARTED.md) for safe instructions. Dedicated Apple Silicon hardware sensor support is not implemented yet.
 
 ## What is GlassGauge?
 
@@ -51,6 +51,18 @@ GlassGauge puts the main metrics together so you can quickly see what your Mac i
 
 The interface uses SwiftUI and AppKit, with a translucent background and adjustable transparency. The goal is something that looks good on the desktop without getting in the way of the information.
 
+### Easier support and diagnostics
+
+Version 0.1.1 adds a local diagnostic report, a quick copyable support summary, and a link to report an issue on GitHub. The diagnostic report contains selected hardware and sensor information. Reports are generated locally, are **not automatically uploaded**, and are saved or shared only when you choose. Personal files, credentials, and network identifiers are intentionally excluded. Review a report before posting it publicly.
+
+You can now clear saved graph history and the event log separately, with a Clear History shortcut on the Overview.
+
+### Choose your glass appearance
+
+Switch between **Glass** and **Solid** window backgrounds. Visible charts can continue refreshing while GlassGauge is open but another app has focus, if you enable that behavior.
+
+The optional **Reduce Energy Use on Battery** setting can temporarily use a Solid background and pause inactive chart rendering when external power is disconnected. Telemetry sampling and history recording continue. When the Mac reconnects to external power, your normal presentation preferences return. The decision is based on whether external power is connected, not whether the battery is actively charging.
+
 ### Real readings, with their limits made clear
 
 One of the biggest areas of work in the 2026 refresh has been sensor accuracy. On supported Intel hardware, GlassGauge reads available information from the Apple System Management Controller. The app also distinguishes measured readings from missing, outdated, and failed measurements.
@@ -69,22 +81,25 @@ Battery charge, power source, charging state, and selected electrical readings a
 
 ## Screenshots and demo
 
-Updated screenshots and a short demo showing **0.1.0 Alpha** are coming soon. The [current Intel build is already available to download](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha).
+Screenshots and a short demo matching **0.1.1 Alpha** are coming soon. You can [download the current Intel alpha now](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha).
 
-## GlassGauge 0.1.0 Alpha status
+## GlassGauge 0.1.1 Alpha status
 
 | Item | Current status |
 | :--- | :--- |
-| Latest public release | **[0.1.0 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha)**, available now |
-| Download | [Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/download/v0.1.0-alpha/GlassGauge-0.1.0-alpha-intel.zip) |
+| Latest public release | **[0.1.1 Alpha, build 2](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha)**, available now |
+| Download | [0.1.1 Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/download/v0.1.1-alpha/GlassGauge-0.1.1-alpha-intel.zip) |
 | Intel Macs | Initial public support, primarily validated on **MacBookPro16,1** (16 inch, 2019); other models need testing |
 | Apple Silicon hardware sensors | Dedicated provider not implemented |
 | GPU monitoring | Separate Intel and Radeon GPU utilization and history verified on the tested Mac, when available |
 | Internal SSD temperature | Native NVMe SMART composite reading verified on the tested internal SSD |
 | Persistent history | SQLite, Now / 1h / 24h, retained for approximately 48 hours |
-| Event Logs | Stored launch, sleep/wake, power and sensor transition events |
+| Event Logs | Stored launch, sleep/wake, power and sensor transition events; clear separately from graph history |
+| Diagnostics | Local Export Diagnostic Report, Copy Diagnostic Summary, Report an Issue |
+| Appearance | Glass and Solid backgrounds; optional background chart updates |
+| Battery energy settings | Optional temporary Solid mode and paused inactive chart rendering without stopping telemetry |
 | Signing and notarization | **Unsigned and not notarized** |
-| Minimum macOS version | Not established as a published compatibility guarantee |
+| macOS version | Release specifies **macOS 13.5 or later**; broader hardware testing remains limited |
 | Source code | Private |
 | Feedback | [GitHub Issues](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues) |
 
@@ -102,7 +117,7 @@ The first Intel alpha is now available. There's more testing to do across Mac mo
 
 ## Follow development and share feedback
 
-You can [download 0.1.0 Alpha now](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha), watch this repository for updates, or share feedback through GitHub Issues.
+You can [download 0.1.1 Alpha now](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha), watch this repository for updates, or share feedback through GitHub Issues. The [original 0.1.0 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha) remains available as the first public release.
 
 * [View the roadmap](docs/ROADMAP.md) for current priorities.
 * [Read the FAQ](docs/FAQ.md) for common questions about compatibility and availability.
@@ -120,7 +135,7 @@ Please avoid sharing serial numbers, credentials, private file paths, or unedite
 | [Getting started](docs/GETTING_STARTED.md) | Download, install, and open the Intel alpha |
 | [FAQ](docs/FAQ.md) | Common questions |
 | [Roadmap](docs/ROADMAP.md) | Development priorities |
-| [Known issues and limitations](docs/KNOWN_ISSUES.md) | Expected behavior, incomplete features, and useful beta bug reports |
+| [Known issues and limitations](docs/KNOWN_ISSUES.md) | Expected behavior, incomplete features, and useful alpha bug reports |
 | [Project history](docs/PROJECT_HISTORY.md) | How the app has changed since 2025 |
 | [Privacy and security](docs/PRIVACY_AND_SECURITY.md) | What has been reviewed and what still needs verification |
 | [Alpha feedback](docs/BETA_FEEDBACK.md) | How to submit useful reports |

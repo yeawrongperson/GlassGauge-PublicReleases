@@ -2,6 +2,48 @@
 
 This page tracks development milestones and actual public releases. Features mentioned in older development notes are not automatically supported on every Mac.
 
+## 0.1.1 Alpha: October 9, 2026
+
+**GlassGauge's second public alpha** is a smaller update focused on diagnostics, battery energy behavior, and interface polish. [See the 0.1.1 release](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha).
+
+### Supportability
+
+* Added **Export Diagnostic Report** to generate a local report with selected hardware and sensor troubleshooting information.
+* Added **Copy Diagnostic Summary** to make a short support description easier to share.
+* Added **Report an Issue** to open the public GitHub Issues page.
+* Reports remain local until the user chooses to save or share one; they are not automatically uploaded. Personal files, credentials, and network identifiers are intentionally excluded.
+
+### Appearance & Energy
+
+* Added **Glass** and **Solid** background modes.
+* Added an option for charts to keep updating while GlassGauge is inactive.
+* Added opt in **Reduce Energy Use on Battery** behavior. While external power is disconnected, it can temporarily use a Solid background and pause inactive chart rendering while **telemetry collection and history continue**.
+* Restores the normal appearance and chart preferences on reconnecting external power.
+* Battery energy decisions use actual **external power connection**, not the charging indicator.
+
+### History & Logs
+
+* Added **Clear Graph History**, **Clear Event Log**, and an Overview **Clear History** shortcut.
+* Reduced noisy GPU activity switch events without removing meaningful GPU status transitions or GPU telemetry.
+* Retained persistent SQLite telemetry history, Now / 1h / 24h views, and approximately 48 hour retention.
+
+### Interface Polish
+
+* Reorganized Settings and improved scrolling cues.
+* Refined Overview alignment, toolbar placement, and presentation.
+* Preserved independent Intel and Radeon GPU monitoring, SSD SMART composite temperature support, battery and power readings, and the sensor measurement accuracy architecture.
+
+### Compatibility and download
+
+* **Intel x86_64 only**, primarily validated on **MacBookPro16,1**. Other Intel Mac sensors vary.
+* **Unsigned and not notarized**; normal monitoring does not require administrator access.
+* Apple Silicon dedicated hardware sensor support is not implemented.
+* The Intel SMC **PSTR** measurement boundary remains unverified and is not confirmed system or wall power.
+* Release ZIP: `GlassGauge-0.1.1-alpha-intel.zip` (**990,851 bytes**).
+* **SHA-256:** `fb00686f46ba6672d82df7db21ec355989cb94530ed45a5e3040b557943e35e5`.
+
+The [0.1.0 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha) remains available as the first public release.
+
 ## 0.1.0 Alpha: October 9, 2026
 
 The **first public GlassGauge release** is now available: [GlassGauge 0.1.0 Alpha for Intel Macs](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha).
