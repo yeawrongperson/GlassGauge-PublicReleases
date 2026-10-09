@@ -1,10 +1,10 @@
 # GlassGauge Roadmap
 
-**Updated October 8, 2026**
+**Updated October 9, 2026**
 
-GlassGauge is an independent macOS system monitor. This page explains what is already working in development, what needs to happen before the first public beta, and what I would like to build next.
+GlassGauge is an independent macOS system monitor. This page explains what is already working in development, what is planned after the first public alpha, and what I would like to build next.
 
-**The first public beta is not available yet.** You can follow progress here, and the first download will appear on the [Releases page](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases) when it is ready.
+**GlassGauge 0.1.0 Alpha is available now for Intel Macs.** [Download the first public release](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha) and follow this roadmap for upcoming work.
 
 [Back to GlassGauge](../README.md) | [Known limitations](KNOWN_ISSUES.md) | [Report an issue](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues)
 
@@ -12,9 +12,9 @@ GlassGauge is an independent macOS system monitor. This page explains what is al
 
 **Built in development:** The main dashboard, live graphs, menu bar panel, glass appearance, battery information, and several hardware readings are implemented.
 
-**Preparing for beta:** I'm verifying accuracy, stability, compatibility, and the actual installable app.
+**Public alpha available:** 0.1.0 Alpha is an unsigned Intel ZIP. I'm gathering compatibility reports and improving stability.
 
-**Planned next:** Broader Mac support, more detailed CPU information, better power and battery views, and useful history.
+**Planned next:** Broader Mac support, more detailed CPU information, better power and battery views, and improvements to persistent history.
 
 **Ideas for later:** More personalization, alerts, and deeper reports.
 
@@ -42,22 +42,22 @@ Development testing on an Intel MacBook Pro has verified access to supported fan
 
 The monitoring system now distinguishes a real measurement from information that is unavailable, outdated, or failed to load. A missing reading should not pretend to be zero, and GlassGauge should never invent fan speeds or temperatures to fill a blank space.
 
-**Important:** This section describes the development application. None of it is a claim that a public beta has already shipped.
+**Public release note:** These foundation features are present in 0.1.0 Alpha where supported, but individual hardware sensors vary by Mac.
 
-## 2. What needs to happen before the first beta
+## 2. Following up on the first public alpha
 
-This is the current priority.
+**0.1.0 Alpha has already shipped.** The work below describes next steps, not conditions that still prevent the download.
 
-1. **Prepare the app for download.** Build an installable release, then verify its signing, notarization, and installation steps.
-2. **Check compatibility.** Confirm which macOS versions and Intel Mac models have actually been tested. Publish a clear minimum requirement.
+1. **Improve distribution.** The Intel ZIP is already available, but future builds can improve signing, notarization, and first launch.
+2. **Expand compatibility testing.** Gather reports from additional Intel Macs and establish a verified minimum macOS version.
 3. **Test the everyday experience.** Check startup, live updates, charts, window resizing, menu bar behavior, and resource usage.
 4. **Double check sensor accuracy.** Make sure unsupported or outdated readings are explained rather than displayed as believable numbers. Continue testing battery charging and power interpretation.
 5. **Review permissions and privacy.** Confirm that normal monitoring does not unexpectedly request administrator access and that any diagnostic behavior is clearly explained.
-6. **Prepare beta feedback.** Publish fresh screenshots, installation instructions, release notes, and a straightforward way to report problems.
+6. **Respond to alpha feedback.** Collect reproducible reports, publish updated screenshots, and keep installation and release notes accurate.
 
-There is no announced beta date. I'd rather publish a useful test build than give people a date I might not meet.
+There is no announced date for the next release. I'd rather improve the alpha based on real testing than promise a schedule I might not meet.
 
-## 3. Planned improvements after the initial beta
+## 3. Planned improvements after the initial alpha
 
 These are the next areas I want to explore and develop. Their order may change based on testing and feedback.
 
@@ -75,7 +75,7 @@ Continue improving how GlassGauge explains charging, battery use, available watt
 
 ### More useful performance history
 
-Work toward saving performance history across app restarts, with clearer time ranges and possible retention controls. Current development graphs should not be mistaken for completed long term storage.
+SQLite history already persists across relaunches in 0.1.0 Alpha. Normal telemetry is retained for approximately 48 hours and can be viewed using Now, 1h, and 24h ranges. Future work may expand retention options, performance, and exporting.
 
 ### UI polish and accessibility
 
@@ -96,22 +96,22 @@ If something matters to you, please suggest it through [GitHub Issues](https://g
 
 **Apple Silicon hardware sensors:** The reviewed development version does not yet have a dedicated sensor reader for Apple Silicon Macs. Some general macOS metrics may still work, but full hardware monitoring is not verified.
 
-**Sensor availability:** GPU activity, disk temperature, fan readings, and some power measurements may be unavailable depending on the Mac. A Mac without physical fans will not have a fan speed to report.
+**Sensor availability:** Independent Intel and Radeon GPU activity and internal NVMe SSD composite temperature are verified on the tested Mac, but these and other sensors can be unavailable on different models. A Mac without physical fans will not have a fan speed to report.
 
 **Battery and power:** Battery power flow and a hardware power reading are not the same thing as total electricity drawn from an outlet. Some electrical readings still need further interpretation and testing.
 
-**History:** The app has live charts and history in memory, but reliable saved history across restarts is not a completed feature.
+**History:** SQLite history persists across app relaunches, retains up to approximately 48 hours, and leaves real collection gaps visible.
 
-**Public download:** There is no signed and verified beta installer available yet.
+**Public download:** 0.1.0 Alpha is available as an Intel ZIP, but it is unsigned and not notarized.
 
 For a clearer explanation of what is a limitation, what is expected behavior, and what should be reported as a bug, see [Known Issues and Limitations](KNOWN_ISSUES.md).
 
 ## 6. How to follow progress
 
-The [Releases page](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases) will host public beta downloads when available.
+The [Releases page](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha) already hosts 0.1.0 Alpha for Intel Macs and will host subsequent builds.
 
 The [Changelog](../CHANGELOG.md) covers work already completed, while this roadmap explains where the project is headed.
 
-For suggestions, compatibility questions, or future beta bug reports, visit [GitHub Issues](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues).
+For suggestions, compatibility questions, or alpha bug reports, visit [GitHub Issues](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues).
 
 **Thanks to everyone who followed GlassGauge after the original r/macapps preview. The project is still being developed, and I want to make its progress easier to follow.**
