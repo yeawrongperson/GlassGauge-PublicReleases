@@ -39,3 +39,5 @@ The second public build, [0.1.1 Alpha](https://github.com/yeawrongperson/GlassGa
 The third public build, [0.1.2 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha), followed on October 9, 2026 with a small fix to the Battery Energy Cell's inactive window animation behavior. No hardware or telemetry features changed in this hotfix.
 
 Read the [Changelog](../CHANGELOG.md) for dated milestones and the [Roadmap](ROADMAP.md) for the next steps.
+
+The fourth public build, [0.1.3 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.3-alpha), followed on October 9, 2026. It introduces the redesigned GlassGauge application icon inspired by its telemetry and charts. This branding update makes no intentional changes to sensor collection, monitoring, charts or history, Battery Energy Cell behavior, power settings, window rendering, or diagnostics. Earlier alpha releases remain available.

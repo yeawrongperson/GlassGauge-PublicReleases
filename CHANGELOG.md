@@ -2,6 +2,21 @@
 
 This page tracks development milestones and actual public releases. Features mentioned in older development notes are not automatically supported on every Mac.
 
+## 0.1.3 Alpha: October 9, 2026
+
+Small branding and polish release. [Download GlassGauge 0.1.3 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.3-alpha).
+
+### Changed
+
+* Introduced the redesigned GlassGauge application icon.
+* Updated the app's visual identity around its telemetry and charting design language for the Dock, Finder, and other macOS surfaces.
+
+No intentional changes to sensor collection, telemetry, chart/history behavior, battery semantics, Energy Cell behavior, energy settings, glass window architecture, or diagnostics. The 0.1.2 Battery Energy Cell fix remains intact.
+
+**Compatibility:** Intel Macs only (`x86_64`), macOS 13.5 or later. Apple Silicon is not supported. Unsigned and not notarized. Sensor availability varies by Intel model.
+
+**ZIP:** `GlassGauge-0.1.3-alpha-intel.zip` (3,159,366 bytes). **SHA-256 (GitHub asset digest):** `0415c742c7586403b9805ea520441f17403af2cbdd097f1061b69191c963f721`.
+
 ## 0.1.2 Alpha: October 9, 2026
 
 Small behavioral hotfix. [Download GlassGauge 0.1.2 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha).

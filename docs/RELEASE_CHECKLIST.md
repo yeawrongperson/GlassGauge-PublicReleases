@@ -2,7 +2,7 @@
 
 [Home](../README.md) / Release Checklist
 
-GlassGauge 0.1.0, 0.1.1, and 0.1.2 Alpha have shipped as unsigned, not notarized Intel ZIP releases. This remains a maintainer checklist for future improvements, not a claim that every item has been completed.
+GlassGauge 0.1.0, 0.1.1, 0.1.2, and 0.1.3 Alpha have shipped as unsigned, not notarized Intel ZIP releases. This remains a maintainer checklist for future improvements, not a claim that every item has been completed.
 
 ## Build and package
 
@@ -10,9 +10,10 @@ GlassGauge 0.1.0, 0.1.1, and 0.1.2 Alpha have shipped as unsigned, not notarized
 * [ ] Confirm the app's minimum macOS version and architecture support.
 * [ ] Verify Release configuration, code signing, entitlements, and any helper bundling.
 * [x] Package the 0.1.0, 0.1.1, and 0.1.2 Alpha `.app` builds inside their published Intel `.zip` files.
+* [ ] Independently check the 0.1.3 ZIP's app bundle, x86_64 executable, version/build, bundle ID, macOS deployment target, and new icon.
 * [ ] Validate installation and launch on a clean test environment.
-* [ ] Future goal: Developer ID signing and notarization. **All three published Alpha builds are unsigned and not notarized.**
-* [x] Publish SHA256 checksums for all three Alpha ZIPs; the GitHub reported 0.1.2 ZIP digest matches its release description.
+* [ ] Future goal: Developer ID signing and notarization. **All four published Alpha builds are unsigned and not notarized.**
+* [x] Publish SHA256 assets for all four Alpha ZIPs; GitHub's 0.1.3 asset digest matches its release description. The companion checksum file contents still need an independent check.
 
 ## Function and accuracy
 
@@ -31,7 +32,7 @@ GlassGauge 0.1.0, 0.1.1, and 0.1.2 Alpha have shipped as unsigned, not notarized
 * [ ] Capture current alpha screenshots from the same public build.
 * [ ] Publish versioned release notes and a real known issues list.
 * [ ] Provide installation and removal instructions.
-* [x] Publish all three alpha releases with their exact ZIPs and checksums. Keep 0.1.0 available as the historical first release.
+* [x] Publish all four alpha releases with their uploaded assets. Keep 0.1.0, 0.1.1, and 0.1.2 available as historical releases.
 * [ ] Verify the public link in a logged out browser session.
 
 ## After publishing

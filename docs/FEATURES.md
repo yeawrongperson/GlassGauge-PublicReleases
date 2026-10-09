@@ -4,7 +4,7 @@
 
 GlassGauge is designed to show useful Mac performance information, explain the limitations of hardware telemetry, and stay legible while the machine is busy.
 
-> **0.1.2 Alpha:** The Intel build is [publicly downloadable](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha). Individual readings still depend on the Mac model, and the main validated hardware is MacBookPro16,1.
+> **0.1.3 Alpha:** The Intel build is [publicly downloadable](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.3-alpha). Individual readings still depend on the Mac model, and the main validated hardware is MacBookPro16,1.
 
 ## Live overview
 
@@ -28,6 +28,10 @@ The current development source provides an overview with dashboard tiles for:
 * Detail views expand on individual metrics, with a dedicated split network incoming and outgoing visualization.
 * SQLite stores normal telemetry approximately once per second, with **Now, 1h, and 24h** views and up to approximately **48 hours** retention. History persists across restarts. Intervals without collection appear as gaps rather than fabricated data.
 * A persisted Logs feed tracks meaningful events such as launch, sleep and wake, power source changes, GPU availability, and sensor availability.
+
+## New in 0.1.3: application icon
+
+GlassGauge's app icon was redesigned around its telemetry and charts. This branding change does not intentionally alter monitoring, battery, Energy Cell, sensors, history, or performance settings. The 0.1.2 Energy Cell fix remains included.
 
 ## Battery Energy Cell presentation
 
@@ -74,7 +78,7 @@ Overall CPU usage and individual process CPU usage use different scales on macOS
 
 Battery current multiplied by battery voltage can estimate **power entering or leaving the battery**. That value is not interchangeable with total platform consumption or electricity drawn from an outlet. The current SMC PSTR value's electrical boundary remains unverified on the tested Intel model and is labeled conservatively in development.
 
-## Features not included or not guaranteed in 0.1.2 Alpha
+## Features not included or not guaranteed in 0.1.3 Alpha
 
 The following should be regarded as planned or requiring further verification, **not shipped guarantees**:
 
