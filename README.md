@@ -125,7 +125,7 @@ The first Intel alpha is now available. There's more testing to do across Mac mo
 
 ## Follow development and share feedback
 
-You can [download 0.1.3 Alpha now](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.3-alpha), watch this repository for updates, or share feedback through GitHub Issues. The earlier [0.1.0 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha) [0.1.1 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha), and [0.1.2 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha) remain available as historical releases.
+You can [download 0.1.3 Alpha now](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.3-alpha), watch this repository for updates, or share feedback through GitHub Issues. The earlier [0.1.0 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha), [0.1.1 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha), and [0.1.2 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha) remain available as historical releases.
 
 * [View the roadmap](docs/ROADMAP.md) for current priorities.
 * [Read the FAQ](docs/FAQ.md) for common questions about compatibility and availability.
