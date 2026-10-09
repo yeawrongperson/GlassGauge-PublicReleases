@@ -32,6 +32,6 @@ The Intel hardware sensor path has direct development evidence on one tested mod
 
 ## What's next
 
-The goal is to turn a promising development project into a safe, signed, properly documented early beta, then expand support with real compatibility reports. This releases repository will be the public record of what actually ships, with versioned packages and limitations stated clearly.
+GlassGauge's first public Intel build, [0.1.0 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha), shipped on October 9, 2026. It is unsigned and not notarized. Next steps include wider hardware testing, continued monitoring improvements, and future distribution refinements. This repository records actual shipped packages and their known limitations.
 
 Read the [Changelog](../CHANGELOG.md) for dated milestones and the [Roadmap](ROADMAP.md) for the next steps.
