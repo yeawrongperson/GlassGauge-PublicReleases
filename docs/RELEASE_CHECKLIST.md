@@ -12,7 +12,7 @@ GlassGauge 0.1.0, 0.1.1, and 0.1.2 Alpha have shipped as unsigned, not notarized
 * [x] Package the 0.1.0, 0.1.1, and 0.1.2 Alpha `.app` builds inside their published Intel `.zip` files.
 * [ ] Validate installation and launch on a clean test environment.
 * [ ] Future goal: Developer ID signing and notarization. **All three published Alpha builds are unsigned and not notarized.**
-* [x] Publish and verify the SHA256 checksums for the 0.1.0 and 0.1.1 Alpha ZIPs.
+* [x] Publish SHA256 checksums for all three Alpha ZIPs; the GitHub reported 0.1.2 ZIP digest matches its release description.
 
 ## Function and accuracy
 
