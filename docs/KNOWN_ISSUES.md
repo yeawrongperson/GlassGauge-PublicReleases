@@ -42,7 +42,7 @@ Hardware sensor validation primarily centers on the 16 inch 2019 Intel MacBook P
 
 ### The first alpha is unsigned and not notarized
 
-**0.1.2 Alpha is already downloadable** as an Intel ZIP. It is unsigned and not notarized, so macOS may block first launch. Read [Getting Started](GETTING_STARTED.md) for the Finder and Privacy & Security options.
+**0.1.2 Alpha is downloadable** as an Intel ZIP. It is unsigned and not notarized, so macOS may block first launch. Read [Getting Started](GETTING_STARTED.md) for the Finder and Privacy & Security options.
 
 **Plan:** Continue improving the release and distribution process. Do not disable Gatekeeper globally to install the alpha.
 
