@@ -1,25 +1,34 @@
 # GlassGauge Changelog
 
-This page tracks development updates and, once there are downloads, public releases. Work completed inside the development project is not necessarily part of a public beta. Each downloadable release will have its own version number and notes.
+This page tracks development milestones and actual public releases. Features mentioned in older development notes are not automatically supported on every Mac.
 
-## Unreleased: Preparing the first public beta
+## 0.1.0 Alpha: October 9, 2026
 
-**Updated October 8, 2026.** No downloadable beta has been published yet.
+The **first public GlassGauge release** is now available: [GlassGauge 0.1.0 Alpha for Intel Macs](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha).
 
-### Current priorities
+### Included in this release
 
-* Prepare and test a macOS app package that other people can install.
-* Check supported hardware and macOS versions before publishing compatibility claims.
-* Verify signing, notarization, permissions, and the installation process.
-* Prepare screenshots, release notes, known issues, and a way for beta testers to report problems.
+* Live CPU, GPU, memory, disk, network, battery, fan, temperature, and selected power monitoring, where supported.
+* Independent **Intel and Radeon GPU utilization and history** on the tested dual GPU Intel Mac.
+* Native **NVMe SMART composite temperature** for the tested internal SSD.
+* SQLite telemetry history sampled approximately once per second with **Now, 1h, and 24h** views. History persists through relaunches and is retained for up to approximately 48 hours.
+* Honest gaps in charts for intervals when GlassGauge was not collecting data.
+* Persisted event Logs for significant events such as launch, sleep and wake, AC or charging changes, GPU availability, and sensor availability.
+* Improved battery and power state handling, with cautious wording for measurements whose scope has not been verified.
+* Refined native glass window rendering, transparency controls, and clearer measurement terminology.
+* The first downloadable Intel x86_64 ZIP: `GlassGauge-0.1.0-alpha-intel.zip`.
 
-### Things to know before testing
+### Installation and compatibility notes
 
-* Intel hardware sensor testing has been performed on an Intel MacBook Pro, but other Intel models still need testing.
-* The reviewed development version does not have a dedicated Apple Silicon hardware sensor provider.
-* Some sensors may not exist or may be unavailable on a particular Mac.
-* Selected SMC power readings do not yet have a verified whole system measurement boundary.
-* A signed public installer has not been published.
+* The build is **unsigned and not notarized**. See [Getting Started](docs/GETTING_STARTED.md) for safe first launch instructions.
+* Normal monitoring **does not require administrator access**.
+* Hardware validation primarily covers **MacBookPro16,1**, the 16 inch 2019 Intel MacBook Pro. Other Intel models need broader testing.
+* Dedicated Apple Silicon hardware sensor support is not implemented.
+* Battery power flow and the Intel SMC `PSTR` value are not verified as total system or wall power.
+
+**ZIP SHA-256:** `d2576a2ab17042c879fb75d68bdafb35275b3641273fc5e343cd78e2cf984a63`
+
+Read [Known Issues](docs/KNOWN_ISSUES.md) and submit findings through [GitHub Issues](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues).
 
 ## October 2026: Monitoring and interface refresh
 
@@ -48,6 +57,6 @@ GlassGauge began as a macOS system monitor with a modern glass inspired interfac
 
 I shared an early preview in **r/macapps**, where it reached approximately **146,000 views and 137 shares**. People continued checking on the project afterward. That preview was not a public installer release.
 
-## How future releases will be documented
+## Future releases
 
-Once the first build is published, each release entry will include its exact version, date, supported Mac models, changes, known issues, and a link to the downloadable package. See the [release notes template](docs/FIRST_BETA_RELEASE_NOTES_TEMPLATE.md) for the format being prepared.
+New versions will be documented here with their version number, date, download link, improvements, and known limitations. The development source remains private; this repository distributes builds and public documentation.
