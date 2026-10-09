@@ -36,4 +36,6 @@ GlassGauge's first public Intel build, [0.1.0 Alpha](https://github.com/yeawrong
 
 The second public build, [0.1.1 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha), was published on October 9, 2026. It adds local diagnostic reporting, more control over saved history and event logs, Glass and Solid backgrounds, and optional battery energy behavior. The original 0.1.0 release remains available.
 
+The third public build, [0.1.2 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha), followed on October 9, 2026 with a small fix to the Battery Energy Cell's inactive window animation behavior. No hardware or telemetry features changed in this hotfix.
+
 Read the [Changelog](../CHANGELOG.md) for dated milestones and the [Roadmap](ROADMAP.md) for the next steps.
