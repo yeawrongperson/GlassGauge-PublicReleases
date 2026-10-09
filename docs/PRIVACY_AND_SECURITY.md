@@ -2,7 +2,7 @@
 
 [Home](../README.md) / Privacy & Security
 
-> **Before release notice:** This is a transparency and preparation document, **not yet a final audited privacy policy** for a downloadable app. The first public beta has not been released.
+> **0.1.0 Alpha notice:** The first public Intel alpha has been released. This page is a transparency note, **not an independently audited privacy policy**.
 
 ## Monitoring and permissions
 
@@ -15,14 +15,14 @@ The reviewed October 2026 development design:
 * Contains an optional **legacy helper diagnostic** path in Settings that may request administrator credentials when the user chooses to invoke it.
 * Does not use that optional legacy helper as the normal sensor sampling path in the current reviewed design.
 
-These observations are specific to the reviewed code and must be validated again on the packaged beta.
+In 0.1.0 Alpha, normal monitoring does not require administrator access. Optional legacy helper diagnostics, where present, are separate and may prompt when explicitly selected.
 
 ## No unverified privacy promises
 
-Before the first release, the project needs to verify and document:
+Additional privacy and security documentation work includes verifying:
 
 * Whether any analytics, crash reports, update checks, or other network communications exist.
-* Whether logs, metrics, or settings are persisted to disk, for how long, and how to delete them.
+* Local storage and deletion details. SQLite persists normal telemetry and event Logs, with telemetry retained up to approximately 48 hours.
 * Whether any external services are used.
 * Which permissions a user actually sees, and why they are requested.
 * How signing, notarization, and the download's authenticity are verified.
@@ -31,7 +31,7 @@ Until that audit is complete, **do not interpret the absence of a privacy claim 
 
 ## Official downloads only
 
-Future installers should come from the project's official [GitHub Releases](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases), with clearly identified versions and release notes. The release process will assess appropriate Developer ID signing and notarization. Users will not be instructed to defeat macOS security checks to install an unverified package.
+The [official 0.1.0 Alpha Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha) is already published. **This build is unsigned and not notarized.** macOS may require Finder > Open or System Settings > Privacy & Security > Open Anyway after a blocked launch. See [Getting Started](GETTING_STARTED.md). Do not disable Gatekeeper globally or strip quarantine attributes. Future signing and notarization improvements remain under consideration.
 
 ## Public bug reports
 
