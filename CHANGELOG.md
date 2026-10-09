@@ -2,6 +2,24 @@
 
 This page tracks development milestones and actual public releases. Features mentioned in older development notes are not automatically supported on every Mac.
 
+## 0.1.2 Alpha: October 9, 2026
+
+Small behavioral hotfix. [Download GlassGauge 0.1.2 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha).
+
+### Fixed
+
+* Battery page Energy Cell shimmer now follows the same inactive window presentation policy as GlassGauge live charts.
+* With Live charts while inactive enabled, the shimmer continues while the app is visible but inactive.
+* The optional battery energy saving override is respected when configured to pause inactive presentation.
+* Hidden, minimized, closed, and fully occluded windows avoid unnecessary animation work.
+* Existing Reduce Motion behavior is preserved.
+
+No changes to battery calculations, telemetry/history collection, chart data, hardware sensors, Energy Cell appearance, or Glass/Solid architecture.
+
+**Compatibility:** Intel x86_64; macOS 13.5 or later. Primarily validated on MacBookPro16,1. Unsigned and not notarized; Apple Silicon support is not implemented.
+
+**ZIP:** `GlassGauge-0.1.2-alpha-intel.zip` (991,106 bytes). **SHA-256:** `9b001981ec34bb144fddb08cf54856a432d1d7712971ec3c63732e0a5e915331`.
+
 ## 0.1.1 Alpha: October 9, 2026
 
 **GlassGauge's second public alpha** is a smaller update focused on diagnostics, battery energy behavior, and interface polish. [See the 0.1.1 release](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha).
