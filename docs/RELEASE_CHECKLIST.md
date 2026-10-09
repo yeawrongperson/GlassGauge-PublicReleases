@@ -1,18 +1,18 @@
-# Public beta release checklist
+# Public release checklist
 
 [Home](../README.md) / Release Checklist
 
-This is a maintainer checklist, not a claim that the first beta has already passed these gates.
+GlassGauge 0.1.0 Alpha has shipped as an unsigned, not notarized Intel ZIP. This list is a continuing maintainer checklist for future release improvements, not a claim that every item was completed for 0.1.0 Alpha.
 
 ## Build and package
 
 * [ ] Freeze the intended release source revision and record its commit.
 * [ ] Confirm the app's minimum macOS version and architecture support.
 * [ ] Verify Release configuration, code signing, entitlements, and any helper bundling.
-* [ ] Create the public `.app` package and installer archive (`.dmg` or `.zip`).
+* [x] Package the 0.1.0 Alpha `.app` inside the published Intel `.zip`.
 * [ ] Validate installation and launch on a clean test environment.
-* [ ] Complete the Developer ID notarization workflow, if applicable, and verify Gatekeeper behavior.
-* [ ] Generate and verify an SHA256 checksum for the final artifact.
+* [ ] Future goal: Developer ID signing and notarization. **0.1.0 Alpha is unsigned and not notarized.**
+* [x] Publish and verify the SHA256 checksum for the 0.1.0 Alpha ZIP.
 
 ## Function and accuracy
 
@@ -27,11 +27,11 @@ This is a maintainer checklist, not a claim that the first beta has already pass
 ## Trust and communication
 
 * [ ] Finish privacy/data flow audit and update [Privacy & Security](PRIVACY_AND_SECURITY.md).
-* [ ] Publish a specific supported device/macOS matrix.
+* [ ] Expand the compatibility matrix beyond the primary validated MacBookPro16,1; minimum macOS version is not yet published.
 * [ ] Capture final interface screenshots from the same beta build.
 * [ ] Publish versioned release notes and a real known issues list.
 * [ ] Provide installation and removal instructions.
-* [ ] Create GitHub Release with the exact installer and checksum.
+* [x] Create GitHub Release with the exact 0.1.0 Alpha Intel ZIP and checksum.
 * [ ] Verify the public link in a logged out browser session.
 
 ## After publishing
