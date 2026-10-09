@@ -2,7 +2,7 @@
 
 [Home](../README.md) / Privacy & Security
 
-> **0.1.1 Alpha notice:** The first public Intel alpha has been released. This page is a transparency note, **not an independently audited privacy policy**.
+> **0.1.1 Alpha notice:** The second public Intel alpha is now available. This page is a transparency note, **not an independently audited privacy policy**.
 
 ## Monitoring and permissions
 
