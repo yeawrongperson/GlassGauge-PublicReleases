@@ -59,7 +59,7 @@ You can now clear saved graph history and the event log separately, with a Clear
 
 ### Choose your glass appearance
 
-Switch between **Glass** and **Solid** window backgrounds. Charts can continue refreshing when GlassGauge is not the active app if you enable that behavior.
+Switch between **Glass** and **Solid** window backgrounds. Visible charts can continue refreshing while GlassGauge is open but another app has focus, if you enable that behavior.
 
 The optional **Reduce Energy Use on Battery** setting can temporarily use a Solid background and pause inactive chart rendering when external power is disconnected. Telemetry sampling and history recording continue. When the Mac reconnects to external power, your normal presentation preferences return. The decision is based on whether external power is connected, not whether the battery is actively charging.
 
@@ -99,7 +99,7 @@ Screenshots and a short demo matching **0.1.1 Alpha** are coming soon. You can [
 | Appearance | Glass and Solid backgrounds; optional background chart updates |
 | Battery energy settings | Optional temporary Solid mode and paused inactive chart rendering without stopping telemetry |
 | Signing and notarization | **Unsigned and not notarized** |
-| Minimum macOS version | Not established as a published compatibility guarantee |
+| macOS version | Release specifies **macOS 13.5 or later**; broader hardware testing remains limited |
 | Source code | Private |
 | Feedback | [GitHub Issues](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues) |
 
