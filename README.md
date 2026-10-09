@@ -3,7 +3,7 @@
   <h3>A clearer window into your Mac.</h3>
   <p>See what your Mac is doing in real time. GlassGauge brings performance metrics, hardware readings, and live charts into a native macOS app with a clean glass inspired interface.</p>
   <p>
-    <a href="https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha"><img alt="0.1.1 Alpha available" src="https://img.shields.io/badge/0.1.1%20Alpha-Available-6d5dfc?style=for-the-badge"></a>
+    <a href="https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha"><img alt="0.1.2 Alpha available" src="https://img.shields.io/badge/0.1.2%20Alpha-Available-6d5dfc?style=for-the-badge"></a>
     <a href="docs/COMPATIBILITY.md"><img alt="Platform: macOS" src="https://img.shields.io/badge/Platform-macOS-24292f?style=for-the-badge"></a>
     <a href="docs/FEATURES.md"><img alt="Made with Swift and SwiftUI" src="https://img.shields.io/badge/Made%20with-Swift%20%26%20SwiftUI-f05138?style=for-the-badge"></a>
   </p>
@@ -18,7 +18,7 @@
 </div>
 
 > [!IMPORTANT]
-> **GlassGauge 0.1.1 Alpha, build 2, is available for Intel Macs.** [Download the Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/download/v0.1.1-alpha/GlassGauge-0.1.1-alpha-intel.zip) from the [0.1.1 Alpha release page](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha). The app is **unsigned and not notarized**, so macOS may require you to confirm the first launch. See [Getting Started](docs/GETTING_STARTED.md) for safe instructions. Dedicated Apple Silicon hardware sensor support is not implemented yet.
+> **GlassGauge 0.1.2 Alpha, build 3, is available for Intel Macs.** [Download the Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/download/v0.1.2-alpha/GlassGauge-0.1.2-alpha-intel.zip) from the [0.1.2 Alpha release page](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha). The app is **unsigned and not notarized**, so macOS may require you to confirm the first launch. See [Getting Started](docs/GETTING_STARTED.md) for safe instructions. Dedicated Apple Silicon hardware sensor support is not implemented yet.
 
 ## What is GlassGauge?
 
@@ -53,9 +53,9 @@ The interface uses SwiftUI and AppKit, with a translucent background and adjusta
 
 ### Easier support and diagnostics
 
-Version 0.1.1 adds a local diagnostic report, a quick copyable support summary, and a link to report an issue on GitHub. The diagnostic report contains selected hardware and sensor information. Reports are generated locally, are **not automatically uploaded**, and are saved or shared only when you choose. Personal files, credentials, and network identifiers are intentionally excluded. Review a report before posting it publicly.
+Introduced in 0.1.1, the app includes a local diagnostic report, a quick copyable support summary, and a link to report an issue on GitHub. The diagnostic report contains selected hardware and sensor information. Reports are generated locally, are **not automatically uploaded**, and are saved or shared only when you choose. Personal files, credentials, and network identifiers are intentionally excluded. Review a report before posting it publicly.
 
-You can now clear saved graph history and the event log separately, with a Clear History shortcut on the Overview.
+You can clear saved graph history and the event log separately, with a Clear History shortcut on the Overview.
 
 ### Choose your glass appearance
 
@@ -79,16 +79,20 @@ Normal telemetry is stored in SQLite, with **Now, 1h, and 24h** views and retent
 
 Battery charge, power source, charging state, and selected electrical readings are useful, but easy to label incorrectly. Recent work has focused on separating battery power flow from a Mac's total power consumption and making the source of a reading clearer.
 
+### 0.1.2 Energy Cell hotfix
+
+The Battery page's Energy Cell shimmer now follows the same inactive window presentation policy as live charts. With **Live charts while inactive** enabled, the shimmer continues while GlassGauge is visible but another app is focused. The optional battery energy setting can pause inactive presentation when configured, while hidden, minimized, closed, and fully occluded windows avoid unnecessary animation work. Reduce Motion remains respected. This fix does not change battery calculations, telemetry, charts, sensors, or window background architecture.
+
 ## Screenshots and demo
 
-Screenshots and a short demo matching **0.1.1 Alpha** are coming soon. You can [download the current Intel alpha now](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha).
+Screenshots and a short demo matching **0.1.2 Alpha** are coming soon. You can [download the current Intel alpha now](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha).
 
-## GlassGauge 0.1.1 Alpha status
+## GlassGauge 0.1.2 Alpha status
 
 | Item | Current status |
 | :--- | :--- |
-| Latest public release | **[0.1.1 Alpha, build 2](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha)**, available now |
-| Download | [0.1.1 Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/download/v0.1.1-alpha/GlassGauge-0.1.1-alpha-intel.zip) |
+| Latest public release | **[0.1.2 Alpha, build 3](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha)**, available now |
+| Download | [0.1.2 Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/download/v0.1.2-alpha/GlassGauge-0.1.2-alpha-intel.zip) |
 | Intel Macs | Initial public support, primarily validated on **MacBookPro16,1** (16 inch, 2019); other models need testing |
 | Apple Silicon hardware sensors | Dedicated provider not implemented |
 | GPU monitoring | Separate Intel and Radeon GPU utilization and history verified on the tested Mac, when available |
@@ -117,7 +121,7 @@ The first Intel alpha is now available. There's more testing to do across Mac mo
 
 ## Follow development and share feedback
 
-You can [download 0.1.1 Alpha now](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha), watch this repository for updates, or share feedback through GitHub Issues. The [original 0.1.0 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha) remains available as the first public release.
+You can [download 0.1.2 Alpha now](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha), watch this repository for updates, or share feedback through GitHub Issues. Both the [original 0.1.0 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha) and [0.1.1 Alpha](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha) remain available as historical releases.
 
 * [View the roadmap](docs/ROADMAP.md) for current priorities.
 * [Read the FAQ](docs/FAQ.md) for common questions about compatibility and availability.

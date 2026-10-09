@@ -4,7 +4,7 @@
 
 ### Is GlassGauge available to download?
 
-**Yes.** [GlassGauge 0.1.1 Alpha for Intel Macs](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha) is available now. This is an unsigned, not notarized ZIP release. See [Getting Started](GETTING_STARTED.md).
+**Yes.** [GlassGauge 0.1.2 Alpha for Intel Macs](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha) is available now. This is an unsigned, not notarized ZIP release. See [Getting Started](GETTING_STARTED.md).
 
 ### Was GlassGauge abandoned after the 2025 Reddit post?
 
@@ -12,11 +12,11 @@ No. Work continued, including a substantial monitoring and interface refresh in 
 
 ### Is the app free? Is it open source?
 
-Future pricing and licensing plans have **not been announced**. The current 0.1.1 Alpha ZIP is publicly downloadable. This public repository hosts release information and future downloads; the development source is not being offered here. A public releases repository is not automatically an open source license.
+Future pricing and licensing plans have **not been announced**. The current 0.1.2 Alpha ZIP is publicly downloadable. This public repository hosts release information and future downloads; the development source is not being offered here. A public releases repository is not automatically an open source license.
 
 ### Will it work on my Apple Silicon Mac?
 
-Apple Silicon is part of the wider compatibility goal, but the sensor coordinator reviewed in October 2026 has **no dedicated Apple Silicon hardware sensor provider**. The current 0.1.1 Alpha targets Intel x86_64 only. Do not expect this build to support Apple Silicon hardware monitoring.
+Apple Silicon is part of the wider compatibility goal, but the sensor coordinator reviewed in October 2026 has **no dedicated Apple Silicon hardware sensor provider**. The current 0.1.2 Alpha targets Intel x86_64 only. Do not expect this build to support Apple Silicon hardware monitoring.
 
 ### Will it work on an Intel Mac?
 
@@ -36,7 +36,7 @@ Individual process CPU percentages can exceed 100% when a process uses multiple 
 
 ### Does it require an administrator password?
 
-The current Intel sensor reading path was designed to collect normal measurements without an automatic administrator prompt. Legacy helper diagnostics exist in the development project and may request authorization if invoked explicitly. Normal monitoring in 0.1.1 Alpha does not require administrator access.
+The current Intel sensor reading path was designed to collect normal measurements without an automatic administrator prompt. Legacy helper diagnostics exist in the development project and may request authorization if invoked explicitly. Normal monitoring in 0.1.2 Alpha does not require administrator access.
 
 ### Can I export a diagnostic report?
 
@@ -50,14 +50,18 @@ This optional feature can temporarily use a Solid background and pause inactive 
 
 Yes. 0.1.1 includes separate Clear Graph History and Clear Event Log actions plus an Overview Clear History shortcut.
 
+### What did 0.1.2 fix?
+
+It fixes the Battery page Energy Cell shimmer so that it respects the same inactive window settings as the live charts. If the app stays visible while another app has focus, the shimmer can continue when Live charts while inactive is enabled. Battery saving overrides and Reduce Motion still apply. No battery calculations or telemetry were changed.
+
 ### Does it send my data to a server?
 
-A complete independent privacy audit has not been established for 0.1.1 Alpha. The monitoring design uses macOS hardware and OS sources, but we will not make an unverified blanket claim about analytics, crash reports, storage, or network transmission. See [Privacy & Security](PRIVACY_AND_SECURITY.md).
+A complete independent privacy audit has not been established for 0.1.2 Alpha. The monitoring design uses macOS hardware and OS sources, but we will not make an unverified blanket claim about analytics, crash reports, storage, or network transmission. See [Privacy & Security](PRIVACY_AND_SECURITY.md).
 
 ### Can I help test it?
 
-0.1.1 Alpha is available, and testing and feedback across Intel Mac models are welcome. Read [Alpha Feedback](BETA_FEEDBACK.md) for a reporting format.
+0.1.2 Alpha is available, and testing and feedback across Intel Mac models are welcome. Read [Alpha Feedback](BETA_FEEDBACK.md) for a reporting format.
 
 ### When will the next version release?
 
-**0.1.1 Alpha is already available.** No date has been announced for the next build. See the [Roadmap](ROADMAP.md) for current priorities.
+**0.1.2 Alpha is already available.** No date has been announced for the next build. See the [Roadmap](ROADMAP.md) for current priorities.

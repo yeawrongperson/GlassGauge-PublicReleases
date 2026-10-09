@@ -2,17 +2,17 @@
 
 [Home](../README.md) / Release Checklist
 
-GlassGauge 0.1.0 Alpha and 0.1.1 Alpha have both shipped as unsigned, not notarized Intel ZIP releases. This remains a maintainer checklist for future improvements, not a claim that every item has been completed.
+GlassGauge 0.1.0, 0.1.1, and 0.1.2 Alpha have shipped as unsigned, not notarized Intel ZIP releases. This remains a maintainer checklist for future improvements, not a claim that every item has been completed.
 
 ## Build and package
 
 * [ ] Freeze the intended release source revision and record its commit.
 * [ ] Confirm the app's minimum macOS version and architecture support.
 * [ ] Verify Release configuration, code signing, entitlements, and any helper bundling.
-* [x] Package the 0.1.0 and 0.1.1 Alpha `.app` builds inside their published Intel `.zip` files.
+* [x] Package the 0.1.0, 0.1.1, and 0.1.2 Alpha `.app` builds inside their published Intel `.zip` files.
 * [ ] Validate installation and launch on a clean test environment.
-* [ ] Future goal: Developer ID signing and notarization. **Both 0.1.0 and 0.1.1 Alpha are unsigned and not notarized.**
-* [x] Publish and verify the SHA256 checksums for the 0.1.0 and 0.1.1 Alpha ZIPs.
+* [ ] Future goal: Developer ID signing and notarization. **All three published Alpha builds are unsigned and not notarized.**
+* [x] Publish SHA256 checksums for all three Alpha ZIPs; the GitHub reported 0.1.2 ZIP digest matches its release description.
 
 ## Function and accuracy
 
@@ -31,7 +31,7 @@ GlassGauge 0.1.0 Alpha and 0.1.1 Alpha have both shipped as unsigned, not notari
 * [ ] Capture current alpha screenshots from the same public build.
 * [ ] Publish versioned release notes and a real known issues list.
 * [ ] Provide installation and removal instructions.
-* [x] Publish both alpha releases with their exact ZIPs and checksums. Keep 0.1.0 available as the historical first release.
+* [x] Publish all three alpha releases with their exact ZIPs and checksums. Keep 0.1.0 available as the historical first release.
 * [ ] Verify the public link in a logged out browser session.
 
 ## After publishing
