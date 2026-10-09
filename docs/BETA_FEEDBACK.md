@@ -2,7 +2,7 @@
 
 [Home](../README.md) / Alpha Feedback
 
-A useful report helps distinguish an app bug from a model specific hardware limitation. **GlassGauge 0.1.0 Alpha is available now** for Intel Macs: [download it here](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha).
+A useful report helps distinguish an app bug from a model specific hardware limitation. **GlassGauge 0.1.1 Alpha is available now** for Intel Macs: [download it here](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha).
 
 ## Before opening an issue
 
@@ -19,7 +19,7 @@ Copy this into a [new GitHub Issue](https://github.com/yeawrongperson/GlassGauge
 A short explanation of the problem.
 
 ### GlassGauge version
-Example: 0.1.0 Alpha (include build number if available)
+Example: 0.1.1 Alpha (include build number if available)
 
 ### Mac and macOS
 Model/year, Intel or Apple Silicon chip, and macOS version.
@@ -57,6 +57,10 @@ Anything that changes the result, such as plugging in power or resizing the wind
 * Performance overhead and idle resource usage.
 * Window blur, appearance, resizing, multiple monitors, and accessibility.
 * Install/open/relaunch reliability and permission prompts.
+
+## Optional diagnostic reports
+
+GlassGauge 0.1.1 adds **Export Diagnostic Report** and **Copy Diagnostic Summary**. Reports are generated locally and **not uploaded automatically**. They contain selected hardware and sensor support information and intentionally exclude personal files, credentials, and network identifiers. If needed, manually attach a saved report to your GitHub issue after reviewing it.
 
 ## Protect your information
 
