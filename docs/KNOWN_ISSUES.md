@@ -1,10 +1,10 @@
 # Known Issues and Limitations
 
-**Updated October 8, 2026**
+**Updated October 9, 2026**
 
 This page explains what GlassGauge can and cannot do right now, and which behaviors deserve a bug report.
 
-**No public beta is available yet.** The notes below describe the current development version and the testing still needed before release.
+**GlassGauge 0.1.0 Alpha is available now for Intel Macs.** [Download it here](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha). These notes describe the initial public alpha, its known limitations, and areas that need additional testing.
 
 [Back to GlassGauge](../README.md) | [Roadmap](ROADMAP.md) | [Report an issue](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues)
 
@@ -18,7 +18,7 @@ The current hardware sensor system is designed around a tested Intel Mac. A dedi
 
 ### Some readings may not be available
 
-Different Mac models expose different hardware information. GPU usage and disk temperature were unavailable through the verified reading path on the Intel Mac used for current development tests. Some Macs also have no fans or no internal battery.
+Different Mac models expose different hardware information. On the primary tested Intel Mac, **independent Intel and Radeon GPU utilization/history** and **internal NVMe SMART composite SSD temperature** are available. Those readings may not be supported on other Macs. Some machines also have no fans or internal battery.
 
 **Plan:** Test more models, use additional reliable data sources where possible, and always explain missing data clearly.
 
@@ -28,23 +28,23 @@ An available battery watt reading describes energy entering or leaving the batte
 
 **Plan:** Keep source information clear and avoid calling a value total system power unless its meaning is verified.
 
-### History is not fully saved between launches
+### History is saved, but has a limited retention window
 
-Live charts and time range controls are present, but reliable saved history across app restarts has not been finished. A visible 24 hour option does not mean 24 hours of stored data is always available.
+Normal telemetry is stored using SQLite, approximately once per second. **Now, 1h, and 24h** views are available. Readings persist across app relaunches, with retention of up to approximately **48 hours**. If GlassGauge was not collecting readings, the missing period is shown as a gap, not invented data.
 
-**Plan:** Add reliable history storage and explain exactly how much information is retained.
+**Plan:** Continue verifying history retention, chart performance, and how the app handles interruptions on more Macs.
 
 ### Compatibility has not been broadly verified
 
-Current sensor testing centers on one Intel MacBook Pro. Supported macOS versions and wider device compatibility still need to be confirmed using the actual release build.
+Hardware sensor validation primarily centers on the 16 inch 2019 Intel MacBook Pro (MacBookPro16,1). Broader Intel model compatibility and a published minimum macOS version still need verification.
 
-**Plan:** Test more Mac models and publish a compatibility list before beta distribution.
+**Plan:** Test more Intel Mac models and expand the published compatibility guidance based on confirmed results.
 
-### The downloadable beta is not ready
+### The first alpha is unsigned and not notarized
 
-Packaging, signing, notarization, and installation testing are part of the release checklist. There is no verified public installer to download yet.
+**0.1.0 Alpha is already downloadable** as an Intel ZIP. It is unsigned and not notarized, so macOS may block first launch. Read [Getting Started](GETTING_STARTED.md) for the Finder and Privacy & Security options.
 
-**Plan:** Publish the installer and installation instructions on the GitHub Releases page after validation.
+**Plan:** Continue improving the release and distribution process. Do not disable Gatekeeper globally to install the alpha.
 
 ## Things still being checked
 
@@ -52,7 +52,7 @@ Packaging, signing, notarization, and installation testing are part of the relea
 
 **Battery behavior:** Battery and charging data can update at different speeds inside macOS. The app has improved how it handles this, but unusual power transitions still need more testing.
 
-**Startup and permissions:** Normal monitoring is designed to run without installing a privileged helper. Optional legacy helper controls are separate. The packaged beta still needs a complete permissions and startup review.
+**Startup and permissions:** Normal monitoring does not require administrator access. Optional legacy helper diagnostics, where present, are separate and may request permission if explicitly used. Continue reporting unexpected prompts or launch problems.
 
 These are testing areas. They are not claims that every user will experience a problem.
 
@@ -64,11 +64,11 @@ These are testing areas. They are not claims that every user will experience a p
 
 **Different CPU percentages:** An individual application may use more than 100 percent of one CPU core's capacity while total Mac CPU use remains below 100 percent. Those views measure different things.
 
-**Charts without older data:** Until persistent history is implemented, information from a previous app session may not be available.
+**Gaps in saved charts:** GlassGauge preserves recorded readings across relaunches, but periods when the app was not collecting data remain empty. Data older than the approximately 48 hour retention window is removed.
 
 ## What should I report as a bug?
 
-When beta testing begins, reports like these will be especially useful:
+For the public alpha, reports like these are especially useful:
 
 * GlassGauge crashes, freezes, or becomes unresponsive.
 * Charts stop updating even though the rest of the app is running.
