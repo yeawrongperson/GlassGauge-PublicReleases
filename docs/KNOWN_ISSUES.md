@@ -4,7 +4,7 @@
 
 This page explains what GlassGauge can and cannot do right now, and which behaviors deserve a bug report.
 
-**GlassGauge 0.1.2 Alpha is available now for Intel Macs.** [Download it here](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha). These notes describe the current third public alpha, its known limitations, and areas that need additional testing.
+**GlassGauge 0.1.3 Alpha is available now for Intel Macs.** [Download it here](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.3-alpha). These notes describe the current fourth public alpha, its known limitations, and areas that need additional testing.
 
 [Back to GlassGauge](../README.md) | [Roadmap](ROADMAP.md) | [Report an issue](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues)
 
@@ -42,7 +42,7 @@ Hardware sensor validation primarily centers on the 16 inch 2019 Intel MacBook P
 
 ### The first alpha is unsigned and not notarized
 
-**0.1.2 Alpha is downloadable** as an Intel ZIP. It is unsigned and not notarized, so macOS may block first launch. Read [Getting Started](GETTING_STARTED.md) for the Finder and Privacy & Security options.
+**0.1.3 Alpha is downloadable** as an Intel ZIP. It is unsigned and not notarized, so macOS may block first launch. Read [Getting Started](GETTING_STARTED.md) for the Finder and Privacy & Security options.
 
 **Plan:** Continue improving the release and distribution process. Do not disable Gatekeeper globally to install the alpha.
 
