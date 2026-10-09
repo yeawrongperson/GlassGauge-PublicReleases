@@ -4,7 +4,7 @@
 
 This page explains what GlassGauge can and cannot do right now, and which behaviors deserve a bug report.
 
-**GlassGauge 0.1.1 Alpha is available now for Intel Macs.** [Download it here](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha). These notes describe the initial public alpha, its known limitations, and areas that need additional testing.
+**GlassGauge 0.1.1 Alpha is available now for Intel Macs.** [Download it here](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha). These notes describe the current second public alpha, its known limitations, and areas that need additional testing.
 
 [Back to GlassGauge](../README.md) | [Roadmap](ROADMAP.md) | [Report an issue](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues)
 
@@ -36,7 +36,7 @@ Normal telemetry is stored using SQLite, approximately once per second. **Now, 1
 
 ### Compatibility has not been broadly verified
 
-Hardware sensor validation primarily centers on the 16 inch 2019 Intel MacBook Pro (MacBookPro16,1). Broader Intel model compatibility and a published minimum macOS version still need verification.
+Hardware sensor validation primarily centers on the 16 inch 2019 Intel MacBook Pro (MacBookPro16,1). The release specifies macOS 13.5 or later, but broader Intel model compatibility still needs verification.
 
 **Plan:** Test more Intel Mac models and expand the published compatibility guidance based on confirmed results.
 
