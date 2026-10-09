@@ -4,7 +4,7 @@
 
 GlassGauge is an independent macOS system monitor. This page explains what is already working in development, what is planned after the first public alpha, and what I would like to build next.
 
-**GlassGauge 0.1.0 Alpha is available now for Intel Macs.** [Download the first public release](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha) and follow this roadmap for upcoming work.
+**GlassGauge 0.1.1 Alpha is available now for Intel Macs.** [Download the first public release](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha) and follow this roadmap for upcoming work.
 
 [Back to GlassGauge](../README.md) | [Known limitations](KNOWN_ISSUES.md) | [Report an issue](https://github.com/yeawrongperson/GlassGauge-PublicReleases/issues)
 
@@ -12,7 +12,7 @@ GlassGauge is an independent macOS system monitor. This page explains what is al
 
 **Built in development:** The main dashboard, live graphs, menu bar panel, glass appearance, battery information, and several hardware readings are implemented.
 
-**Public alpha available:** 0.1.0 Alpha is an unsigned Intel ZIP. I'm gathering compatibility reports and improving stability.
+**Public alpha available:** 0.1.1 Alpha is the second unsigned Intel ZIP, adding diagnostic tools, appearance modes, optional battery energy behavior, and history controls. I'm gathering compatibility reports and improving stability.
 
 **Planned next:** Broader Mac support, more detailed CPU information, better power and battery views, and improvements to persistent history.
 
@@ -42,11 +42,11 @@ Development testing on an Intel MacBook Pro has verified access to supported fan
 
 The monitoring system now distinguishes a real measurement from information that is unavailable, outdated, or failed to load. A missing reading should not pretend to be zero, and GlassGauge should never invent fan speeds or temperatures to fill a blank space.
 
-**Public release note:** These foundation features are present in 0.1.0 Alpha where supported, but individual hardware sensors vary by Mac.
+**Public release note:** These foundation features are present in 0.1.1 Alpha where supported, but individual hardware sensors vary by Mac.
 
 ## 2. Following up on the first public alpha
 
-**0.1.0 Alpha has already shipped.** The work below describes next steps, not conditions that still prevent the download.
+**0.1.1 Alpha has already shipped.** The work below describes next steps, not conditions that still prevent the download.
 
 1. **Improve distribution.** The Intel ZIP is already available, but future builds can improve signing, notarization, and first launch.
 2. **Expand compatibility testing.** Gather reports from additional Intel Macs and establish a verified minimum macOS version.
@@ -75,7 +75,7 @@ Continue improving how GlassGauge explains charging, battery use, available watt
 
 ### More useful performance history
 
-SQLite history already persists across relaunches in 0.1.0 Alpha. Normal telemetry is retained for approximately 48 hours and can be viewed using Now, 1h, and 24h ranges. Future work may expand retention options, performance, and exporting.
+SQLite history already persists across relaunches in 0.1.1 Alpha. Normal telemetry is retained for approximately 48 hours and can be viewed using Now, 1h, and 24h ranges. Future work may expand retention options, performance, and exporting.
 
 ### UI polish and accessibility
 
@@ -102,13 +102,13 @@ If something matters to you, please suggest it through [GitHub Issues](https://g
 
 **History:** SQLite history persists across app relaunches, retains up to approximately 48 hours, and leaves real collection gaps visible.
 
-**Public download:** 0.1.0 Alpha is available as an Intel ZIP, but it is unsigned and not notarized.
+**Public download:** 0.1.1 Alpha is available as an Intel ZIP, but it is unsigned and not notarized.
 
 For a clearer explanation of what is a limitation, what is expected behavior, and what should be reported as a bug, see [Known Issues and Limitations](KNOWN_ISSUES.md).
 
 ## 6. How to follow progress
 
-The [Releases page](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.0-alpha) already hosts 0.1.0 Alpha for Intel Macs and will host subsequent builds.
+The [Releases page](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.1-alpha) already hosts 0.1.1 Alpha for Intel Macs and will host subsequent builds.
 
 The [Changelog](../CHANGELOG.md) covers work already completed, while this roadmap explains where the project is headed.
 
