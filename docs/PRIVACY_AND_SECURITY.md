@@ -2,7 +2,7 @@
 
 [Home](../README.md) / Privacy & Security
 
-> **0.1.2 Alpha notice:** The third public Intel alpha is now available. This page is a transparency note, **not an independently audited privacy policy**.
+> **0.1.3 Alpha notice:** The fourth public Intel alpha is now available. This page is a transparency note, **not an independently audited privacy policy**.
 
 ## Monitoring and permissions
 
@@ -37,7 +37,7 @@ The separate Clear Graph History and Clear Event Log actions allow users to dele
 
 ## Official downloads only
 
-The [official 0.1.2 Alpha Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.2-alpha) is already published. **This build is unsigned and not notarized.** macOS may require Finder > Open or System Settings > Privacy & Security > Open Anyway after a blocked launch. See [Getting Started](GETTING_STARTED.md). Do not disable Gatekeeper globally or strip quarantine attributes. Future signing and notarization improvements remain under consideration.
+The [official 0.1.3 Alpha Intel ZIP](https://github.com/yeawrongperson/GlassGauge-PublicReleases/releases/tag/v0.1.3-alpha) is already published. **This build is unsigned and not notarized.** macOS may require Finder > Open or System Settings > Privacy & Security > Open Anyway after a blocked launch. See [Getting Started](GETTING_STARTED.md). Do not disable Gatekeeper globally or strip quarantine attributes. Future signing and notarization improvements remain under consideration.
 
 ## Public bug reports
 
